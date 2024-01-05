@@ -65,17 +65,20 @@
             // 
             // bSave
             // 
+            bSave.Enabled = false;
             bSave.Location = new Point(237, 275);
             bSave.Name = "bSave";
             bSave.Size = new Size(219, 24);
             bSave.TabIndex = 3;
             bSave.Text = "Save";
             bSave.UseVisualStyleBackColor = true;
+            bSave.Click += bSave_Click;
             // 
             // sfdImage
             // 
             sfdImage.DefaultExt = "PNG|*.png";
             sfdImage.Filter = "PNG|*.png";
+            sfdImage.OverwritePrompt = false;
             // 
             // Form1
             // 
